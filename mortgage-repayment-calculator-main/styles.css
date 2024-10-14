@@ -1,0 +1,147 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e6f0f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  padding: 20px;
+}
+
+/* Left side: Calculator Form */
+.calculator-form {
+  width: 55%;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.clear-all {
+  float: right;
+  text-decoration: none;
+  color: greenyellow;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.input-group input {
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  width: 48%;
+}
+
+.column input {
+  width: 70%;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.radio-group {
+  margin: 10px 0;
+}
+
+.radio-group label {
+  margin-left: 10px;
+}
+
+.calculate-btn {
+  display: flex; /* Usar flex para alinear íconos y texto */
+  align-items: center; /* Alinear verticalmente */
+  justify-content: center; /* Centrar contenido */
+  width: 100%;
+  background-color: greenyellow;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calculate-btn i {
+  margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.results h2 {
+  color: greenyellow;
+}
+
+/* Right side: Results */
+.results {
+  width: 40%;
+  background-color: #293a49;
+  color: white;
+  padding: 20px;
+}
+
+.results p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.result-box {
+  background-color: #1e2c38;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.result-box p {
+  color: #a2d5f2;
+}
+
+.result-box h1 {
+  color: greenyellow;
+  margin: 10px 0;
+}
+
+.result-box h3 {
+  color: #fff;
+  margin: 5px 0;
+}

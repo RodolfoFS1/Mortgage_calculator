@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Incluye Font Awesome -->
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator-form">
+            <h2>Mortgage Calculator</h2>
+            <a href="#" class="clear-all">Clear All</a>
+            <form>
+                <label for="amount">Mortgage Amount</label>
+                <div class="input-group">
+                    <span>$</span>
+                    <input type="number" id="amount" placeholder="Enter amount" required>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <label for="term">Mortgage Term</label>
+                        <input type="number" id="term" placeholder="Enter term in years" required>
+                        <span>years</span>
+                    </div>
+                    <div class="column">
+                        <label for="rate">Interest Rate</label>
+                        <input type="number" id="rate" placeholder="Enter interest rate" required>
+                        <span>%</span>
+                    </div>
+                </div>
+
+                <label for="mortgage-type">Mortgage Type</label>
+                <div class="radio-group">
+                    <input type="radio" id="repayment" name="mortgage-type" value="Repayment" checked>
+                    <label for="repayment">Repayment</label>
+                    
+                    <input type="radio" id="interest-only" name="mortgage-type" value="Interest Only">
+                    <label for="interest-only">Interest Only</label>
+                </div>
+
+                <button type="submit" class="calculate-btn">
+                    <i class="fas fa-calculator"></i> Calculate Repayments
+                </button> <!-- Botón modificado -->
+            </form>
+        </div>
+
+        <div class="results">
+            <h2>Your results</h2>
+            <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click "calculate repayments" again.</p>
+            <div class="result-box">
+                <p>Your monthly repayments</p>
+                <h1>$0.00</h1>
+                <p>Total you'll repay over the term</p>
+                <h3>$0.00</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
